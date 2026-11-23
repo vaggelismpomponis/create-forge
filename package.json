@@ -1,0 +1,46 @@
+{
+  "name": "create-forge",
+  "version": "1.0.0",
+  "description": "Modern CLI to scaffold apps and websites preconfigured with strict production engineering standards and AI skills",
+  "type": "module",
+  "bin": {
+    "create-forge": "./dist/index.js",
+    "forge": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "templates"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check ."
+  },
+  "keywords": [
+    "cli",
+    "scaffolding",
+    "generator",
+    "nextjs",
+    "react",
+    "dotnet",
+    "astro",
+    "anti-slop",
+    "skills"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "commander": "^13.1.0",
+    "execa": "^9.5.2",
+    "fs-extra": "^11.3.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.13.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  }
+}
