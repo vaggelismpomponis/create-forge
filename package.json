@@ -1,5 +1,5 @@
 {
-  "name": "create-forge",
+  "name": "@ebomponis/create-forge",
   "version": "1.0.0",
   "description": "Modern CLI to scaffold apps and websites preconfigured with strict production engineering standards and AI skills",
   "type": "module",
@@ -9,7 +9,10 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "templates"],
+  "files": [
+    "dist",
+    "templates"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
